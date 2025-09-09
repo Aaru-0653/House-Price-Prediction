@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏠 House Price Prediction</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <h1>🏡 House Price Predictor</h1>
+      <p>Fill in the details below to estimate the house price</p>
+
+      <form action="/predict" method="post" class="grid-form">
+        <div class="form-group">
+          <input type="text" name="area" placeholder="Area (sq ft)" required>
+          <input type="number" name="bedrooms" placeholder="Bedrooms" required>
+        </div>
+        <div class="form-group">
+          <input type="number" name="bathrooms" placeholder="Bathrooms" required>
+          <input type="number" name="stories" placeholder="Stories" required>
+        </div>
+        <div class="form-group">
+          <select name="mainroad" required>
+            <option value="">Mainroad?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <select name="guestroom" required>
+            <option value="">Guestroom?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="basement" required>
+            <option value="">Basement?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <select name="hotwaterheating" required>
+            <option value="">Hot Water Heating?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="airconditioning" required>
+            <option value="">Air Conditioning?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <input type="number" name="parking" placeholder="Parking Spaces" required>
+        </div>
+        <div class="form-group">
+          <select name="prefarea" required>
+            <option value="">Preferred Area?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <select name="furnishingstatus" required>
+            <option value="">Furnishing Status</option>
+            <option value="furnished">Furnished</option>
+            <option value="semi-furnished">Semi-Furnished</option>
+            <option value="unfurnished">Unfurnished</option>
+          </select>
+        </div>
+
+        <button type="submit">✨ Predict Price</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
