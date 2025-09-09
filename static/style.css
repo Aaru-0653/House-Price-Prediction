@@ -78,9 +78,10 @@ body {
 }
 
 button {
-  width: 100%;
+  width: 70%;
   padding: 14px;
   margin-top: 20px;
+  margin-left: 140px;
   background: linear-gradient(135deg, #3d99d6, #d11b52);
   border: none;
   border-radius: 15px;
@@ -92,6 +93,5 @@ button {
 }
 
 button:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 20px #33a4d1, 0 0 40px #ee0979;
 }
