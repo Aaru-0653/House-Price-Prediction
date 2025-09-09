@@ -99,4 +99,5 @@ ML model (RandomForestRegressor or similar) predicts the house price
 Result is displayed on the result.html page
 
 📸 Screenshots
+<img width="1308" height="640" alt="image" src="https://github.com/user-attachments/assets/989f8966-c113-4bd6-bd6c-b41ef05fa885" />
 
